@@ -1,11 +1,12 @@
+import os
 import smtplib
 import csv
 import datetime as dt
 import random
 
 today=dt.date.today()
-EMAIL_ADDRESS = "sonali.creator713@gmail.com"
-PASSWORD = "pmjv cqnd ztos hywd"
+EMAIL_ADDRESS = os.environ.get("sonali.creator713@gmail.com")
+PASSWORD = os.environ.get("pmjv cqnd ztos hywd")
 
 letter = random.randint(1, 3)
 with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
