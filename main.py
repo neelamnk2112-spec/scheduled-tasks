@@ -5,8 +5,8 @@ import datetime as dt
 import random
 
 today=dt.date.today()
-EMAIL_ADDRESS = os.environ.get("sonali.creator713@gmail.com")
-PASSWORD = os.environ.get("pmjv cqnd ztos hywd")
+EMAIL_ADDRESS = os.environ.get(EMAIL_ADDRESS)
+PASSWORD = os.environ.get(PASSWORD)
 
 letter = random.randint(1, 3)
 with smtplib.SMTP('smtp.gmail.com', 587) as smtp:
