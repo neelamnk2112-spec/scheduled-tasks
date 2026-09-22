@@ -21,7 +21,7 @@ on:
 
 jobs:
   run:
-    runs-on: ubuntu-latest using:'node24' main:'main.js'
+    runs-on: ubuntu-latest 
     
 
     steps:
